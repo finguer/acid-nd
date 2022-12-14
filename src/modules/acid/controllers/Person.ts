@@ -51,7 +51,7 @@ class Person extends Controller {
   }
 
 
-  @Delete('/delete/:id')
+  @Delete('/remove/:id')
   @DbSettings('Orm')
   @ReadOnly(true)
   async remove(params: any): Promise<any> {
